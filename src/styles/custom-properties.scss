@@ -1,0 +1,29 @@
+///Breakpoints
+$breakpoint-small: 688px;
+$breakpoint-medium: 992px;
+$breakpoint-large: 1312px;
+$breakpoint-extra-large: 1600px;
+
+:root {
+  --powder-pink: #fdf1f3;
+  --lipstick-red: #e10808;
+  --electric-mango: #ffb340;
+
+  --facebook-blue: #1778f2;
+  --muted-facebook-blue: rgba(23, 120, 242, 0.6);
+  --twitter-blue: #00acee;
+  --muted-twitter-blue: rgba(0, 172, 238, 0.6);
+  --google-red: #dd4b39;
+  --muted-google-red: rgba(221, 75, 57, 0.6);
+  --paypal-blue: #0070ba;
+  --muted-paypal-blue: rgba(0, 112, 186, 0.6);
+
+  --breakpoint-small: $breakpoint-small;
+}
+
+.page {
+  display: flex;
+  min-height: 80vh;
+  flex-direction: column;
+  padding: 2vh 2vw;
+}

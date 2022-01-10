@@ -1,0 +1,53 @@
+@import '~bootstrap/scss/bootstrap';
+@import url('https://fonts.googleapis.com/css2?family=Spline+Sans:wght@700&display=swap');
+@import './styles/custom-properties.scss';
+
+.App {
+  background-color: #ffffff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  // align-items: center;
+  // justify-content: flex-start;
+  // text-align: center;
+  color: #000000;
+}
+
+.AppLogo {
+  height: 10vmin;
+  pointer-events: none;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .AppLogo {
+    // animation: AppLogoSpin infinite 20s linear;
+  }
+}
+
+.AppHeader {
+  font-size: calc(10px + 2vmin);
+  background-color: var(--powder-pink);
+  width: 100vw;
+  padding: 2vh 0;
+  text-align: left;
+}
+
+@keyframes AppLogoSpin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+a:link,
+a:visited,
+a:active,
+a:hover {
+  text-decoration: none;
+  color: inherit;
+  margin: 1rem 0 0 2rem;
+}
+a:hover {
+  color: var(--electric-mango);
+}

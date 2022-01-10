@@ -1,0 +1,28 @@
+@import '../styles//custom-properties.scss';
+
+.navbar {
+  min-width: 100%;
+  background-color: var(--powder-pink);
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  padding: 2%;
+}
+
+.container {
+  min-width: 100%;
+  padding: 2% 5%;
+  background-color: transparent;
+  flex-wrap: nowrap;
+}
+
+.brand {
+  width: 40%;
+  max-width: 600px;
+}
+.logo {
+  width: 100%;
+}
+.shoppingCart {
+  color: var(--lipstick-red);
+}
