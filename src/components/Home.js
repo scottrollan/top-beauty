@@ -6,27 +6,29 @@ import styles from './Home.module.scss';
 export default function Home() {
   const [items, setItems] = useState([]);
   const figureWidth = 300;
+
   useEffect(() => {
     const getItems = async () => {
-      setItems([]);
       try {
-        const inventory = await getAllInventory();
-        inventory.forEach((item) => {
-          console.log(item.images);
-          setItems([...items, item]);
-        });
+        let inventory = await getAllInventory();
+        setItems([...inventory]);
       } catch (error) {
         console.log(error.message);
       }
     };
     getItems();
+    console.log(items);
   }, []);
   return (
     <div className={styles.page}>
       <div className={styles.figureLayout}>
         {items.map((i) => {
           return (
-            <Figure key={i.inventoryId} style={{ maxWidth: figureWidth }}>
+            <Figure
+              key={i.inventoryId}
+              style={{ maxWidth: figureWidth }}
+              className={styles.figure}
+            >
               <Figure.Image
                 width={figureWidth}
                 height={375}

@@ -18,5 +18,6 @@ export const getAllInventory = async () => {
   querySnapshot.forEach((item) => {
     items = [...items, { ...item.data() }];
   });
+
   return items;
 };
