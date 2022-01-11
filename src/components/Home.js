@@ -26,12 +26,12 @@ export default function Home() {
           return (
             <Figure
               key={i.inventoryId}
-              style={{ maxWidth: figureWidth }}
+              style={{ maxWidth: figureWidth, minWidth: figureWidth }}
               className={styles.figure}
             >
               <Figure.Image
                 width={figureWidth}
-                height={375}
+                // height={375}
                 src={`${i.images[0]}`}
                 alt="coming soon"
               />
