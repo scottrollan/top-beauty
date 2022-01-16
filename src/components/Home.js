@@ -17,7 +17,6 @@ export default function Home() {
       }
     };
     getItems();
-    console.log(items);
   }, []);
   return (
     <div className={styles.page}>
@@ -37,8 +36,8 @@ export default function Home() {
               />
               <Figure.Caption style={{ textAlign: 'center' }}>
                 <h4>${i.retailPrice}</h4>
-                <h6>{i.itemName}</h6>
-                <p>{i.itemDescription}</p>
+                <h6>{i.name}</h6>
+                <p>{i.description}</p>
               </Figure.Caption>
             </Figure>
           );
